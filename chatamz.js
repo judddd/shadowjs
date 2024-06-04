@@ -13,9 +13,10 @@ var responseBody = $response.body;
 
 if ($response.body) {
 	if (url.includes("https://api.ai520.co/chatapi/auth/memberInfo")) {
-		responseBody = responseBody.replace(/(aiModels": \[[\d\s,]+\])(?!\s*,)/g, '$,21,22,23,24');
-		let responseObject = JSON.parse(responseBody);
-        $done({ body: JSON.stringify(responseObject) });
+ 
+	 let responseObject = JSON.parse(responseBody);
+         responseObject.result.email = "123";
+         $done({ body: JSON.stringify(responseObject) });
  
 	}
     responseBody = responseBody.replace(/("availableValue"\s*:\s*)\d+/g, '$16666');
