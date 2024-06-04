@@ -8,6 +8,8 @@
 hostname = api.ai520.co
 */
 
+var url = $request.url;
+
 if ($response.body) {
     let responseBody = $response.body;
     if (url.includes("https://api.ai520.co/chatapi/auth/memberInfo")) {
