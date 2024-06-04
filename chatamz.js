@@ -9,12 +9,14 @@ https:\/\/api\.ai520\.co\/chatapi\/\/member\/(\/wallet\/) url script-response-bo
 hostname = api.ai520.co
 */
 
+console.log("agag");
+
 if ($response.body) {
     let responseBody = $response.body;
     
     let responseObject = JSON.parse(responseBody);
     responseObject.message = "123445";
-   
+     
     $done({ body: JSON.stringify(responseObject) });
 } else {
     $done({});
