@@ -2,7 +2,7 @@
 #!desc=chatamz
 
 [rewrite_local]
-chatamz = type=http-response, pattern=https:\/\/api\.ai520\.co\/chatapi\/\/member\/(\/wallet\/), script-path=https://raw.githubusercontent.com/judddd/shadownjs/main/chatamz.js, requires-body=true, max-size=-1, timeout=60
+chatamz = type=http-response, pattern=https:\/\/api\.ai520\.co\/chatapi\/\/member\/(\/wallet\/), script-path=https://github.com/judddd/shadowjs/blob/main/chatamz.js, requires-body=true, max-size=-1, timeout=60
 
 [mitm]
 hostname = api.ai520.co
