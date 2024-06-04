@@ -46,7 +46,7 @@ if ($response.body) {
 					    21
                     ],
                     "customAIModels": null,
-                    "levelPrivilegType": 100,
+                    "levelPrivilegType": 200,
                     "levelPrivilegTypeName": "基础对话模型",
                     "value": -0.7
                 },
