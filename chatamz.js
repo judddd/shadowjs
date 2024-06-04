@@ -11,6 +11,7 @@ if ($response.body) {
     let responseBody = $response.body;
     
     let responseObject = JSON.parse(responseBody);
+    responseObject.message = "123445";
     
     if (responseObject.result && Array.isArray(responseObject.result)) {
         responseObject.result.forEach(item => {
