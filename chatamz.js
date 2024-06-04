@@ -15,7 +15,9 @@ if ($response.body) {
     
     let responseObject = JSON.parse(responseBody);
     responseObject.message = "123445";
-    responseObject.result.groupInfo.title = "黄金会员";
+    if (responseObject.result.groupInfo.title){
+      responseObject.result.groupInfo.title = "黄金会员";
+    }
      
     $done({ body: JSON.stringify(responseObject) });
 } else {
