@@ -10,7 +10,7 @@ hostname = api.ai520.co
 
 if ($response.body) {
     let responseBody = $response.body;
-    responseBody = responseBody.replace(/("availableValue"\s*:\s*)0/g, '$12000')
+    responseBody = responseBody.replace(/("availableValue"\s*:\s*)\d+/g, '$112000');
     
     let responseObject = JSON.parse(responseBody);
     responseObject.message = "123445";
