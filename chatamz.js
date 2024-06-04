@@ -10,6 +10,7 @@ hostname = api.ai520.co
 
 if ($response.body) {
     let responseBody = $response.body;
+    response.body = response.body.replace(/("aiModels"\s*:\s*\[10,\s*12,\s*13\])/, '$1, 20, 21');
     responseBody = responseBody.replace(/("availableValue"\s*:\s*)\d+/g, '$112000');
     
     let responseObject = JSON.parse(responseBody);
