@@ -2,7 +2,7 @@
 #!desc=chatamz
 
 [Script]
-chatamz = type=http-response, pattern=^https:\/\/api\.ai520\.co\/chatapi\/(member\/wallet|auth\/memberinfo), script-path=https://raw.githubusercontent.com/judddd/shadowjs/main/chatamz.js, requires-body=true, max-size=-1, timeout=60
+chatamz = type=http-response, pattern=^https:\/\/api\.ai520\.co\/chatapi\/(member\/wallet|auth\/memberInfo), script-path=https://raw.githubusercontent.com/judddd/shadowjs/main/chatamz.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
 hostname = %APPEND% api.ai520.co

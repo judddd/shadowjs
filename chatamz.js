@@ -1,7 +1,7 @@
 /*
 [rewrite_local]
 
-^https:\/\/api\.ai520\.co\/chatapi\/(member\/wallet|auth\/memberinfo) url script-response-body https://raw.githubusercontent.com/judddd/shadowjs/main/chatamz.js
+^https:\/\/api\.ai520\.co\/chatapi\/(member\/wallet|auth\/memberInfo) url script-response-body https://raw.githubusercontent.com/judddd/shadowjs/main/chatamz.js
 
 [mitm]
 
