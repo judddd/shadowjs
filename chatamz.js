@@ -12,8 +12,8 @@ var url = $request.url;
 var responseBody = $response.body;
 
 if ($response.body) {
-    responseBody = responseBody.replace(/("availableValue"\s*:\s*)\d+/g, '$150');
-    responseBody = responseBody.replace(/("totalValue"\s*:\s*)\d+/g, '$160');
+    responseBody = responseBody.replace(/("availableValue"\s*:\s*)\d+/g, '$1250');
+    responseBody = responseBody.replace(/("totalValue"\s*:\s*)\d+/g, '$1260');
     
     let responseObject = JSON.parse(responseBody);
     responseObject.message = "123445";
