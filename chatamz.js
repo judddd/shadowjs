@@ -1,3 +1,4 @@
+/*
 #!name=chatamz
 #!desc=chatamz
 
@@ -7,6 +8,7 @@ https:\/\/api\.ai520\.co\/chatapi\/\/member\/(\/wallet\/) url script-response-bo
 [mitm]
 hostname = api.ai520.co
 */
+
 if ($response.body) {
     let responseBody = $response.body;
     
