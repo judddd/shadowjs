@@ -11,17 +11,8 @@ if ($response.body) {
     let responseBody = $response.body;
     
     let responseObject = JSON.parse(responseBody);
-    responseObject.data.message = "123445";
+    responseObject.message = "123445";
    
- 
-    if (responseObject.result && Array.isArray(responseObject.result)) {
-        responseObject.result.forEach(item => {
-            if (item.hasOwnProperty('availableValue')) {
-                item.availableValue = 2000;
-            }
-        });
-    }
-    
     $done({ body: JSON.stringify(responseObject) });
 } else {
     $done({});
